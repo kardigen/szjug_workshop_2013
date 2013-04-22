@@ -27,4 +27,11 @@ https://wiki.jenkins-ci.org/display/JENKINS/Beginners+Guide+to+Contributing
 
         mvn clean test
         
+        mvn clean install -pl war -am -DskipTests
+        mvn clean test
+        
+        export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
+        mvn clean install -pl war -am -DskipTests
+        mvn test
+        
 7. poprawić problem

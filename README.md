@@ -3,8 +3,9 @@ szjug_workshop_2013
 
 1. Jenkins overview
 
-http://jenkins-ci.org/
-https://issues.jenkins-ci.or
+http://jenkins-ci.org/  
+https://issues.jenkins-ci.or  
+https://wiki.jenkins-ci.org/display/JENKINS/Beginners+Guide+to+Contributing  
 
 2. Konto na github
 3. sklonować https://github.com/jenkinsci/jenkins

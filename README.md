@@ -17,4 +17,14 @@ https://wiki.jenkins-ci.org/display/JENKINS/Beginners+Guide+to+Contributing
         git status
 
 5. utworzyć working branche
+
+        git branch JENKINS-12471
+        git status
+        git checkout JENKINS-12471
+        git status
         
+6. uruchomić testy
+
+        mvn clean test
+        
+7. poprawić problem

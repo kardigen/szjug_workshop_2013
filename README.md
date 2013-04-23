@@ -34,4 +34,16 @@ https://wiki.jenkins-ci.org/display/JENKINS/Beginners+Guide+to+Contributing
         mvn clean install -pl war -am -DskipTests
         mvn test
         
-7. poprawić problem
+7. zaimportować projekt do IDE
+
+Po uruchmieniu IntelliJ Idea użyć opcji:
+- Importuj projekt
+- wskazać katalog z git workspace
+- import from external model->maven
+- search project recursively
+- import maven projects automatically
+- next,next
+- choose java jdk dir
+- finish
+
+

@@ -1,29 +1,31 @@
 szjug_workshop_2013
 ===================
 
-1. Jenkins overview
+# Jenkins overview
 
 http://jenkins-ci.org/  
 https://issues.jenkins-ci.or  
 https://wiki.jenkins-ci.org/display/JENKINS/Beginners+Guide+to+Contributing  
 
-2. Konto na github
-3. sklonować https://github.com/jenkinsci/jenkins
-4. sklonować repo do workspace
+# github
+
+1. Konto na github
+2. sklonować https://github.com/jenkinsci/jenkins
+3. sklonować repo do workspace
 
         mkdir jenkins
         cd jenkins
         git clone https://github.com/kardigen/jenkins.git
         git status
 
-5. utworzyć working branche
+# utworzyć working branche
 
         git branch JENKINS-12471
         git status
         git checkout JENKINS-12471
         git status
         
-6. uruchomić testy
+# uruchomić testy
 
         mvn clean test
         
@@ -34,16 +36,31 @@ https://wiki.jenkins-ci.org/display/JENKINS/Beginners+Guide+to+Contributing
         mvn clean install -pl war -am -DskipTests
         mvn test
         
-7. zaimportować projekt do IDE
+# zaimportować projekt do IDE
 
-Po uruchmieniu IntelliJ Idea użyć opcji:
-- Importuj projekt
-- wskazać katalog z git workspace
-- import from external model->maven
-- search project recursively
-- import maven projects automatically
-- next,next
-- choose java jdk dir
-- finish
+  Po uruchmieniu IntelliJ Idea użyć opcji:
+  - Importuj projekt
+  - wskazać katalog z git workspace
+  - import from external model->maven
+  - search project recursively
+  - import maven projects automatically
+  - next,next
+  - choose java jdk dir
+  - finish
 
+# podstawowe skróty
+
+  - uruchamiane akcji - ctrl/cmd + shift + a
+  - find in paths - ctrl + shift + f
+  - opcje szukaj: całe słowa, maska pliku: *.properties
+  - zamieniamy messages
+
+# komitowanie i wypychanie zmian
+
+        git add
+        git commit -m 'message'
+        git rebase master
+        git checkout master
+        git rebase JENKINS-12471
+        git push
 
